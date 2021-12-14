@@ -1,0 +1,62 @@
+{
+    "playlist" : [
+        {
+        "id": "1",
+        "title": "Carreira de sucesso",
+        "date": "01/10/2021",
+        "author": "DIO",
+        "source": "DIO",
+        "uri":
+          "https://ia800204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act1_shakespeare.mp3",
+        "imageSource": "https://i.ibb.co/FYjqrST/cover.png"
+      },
+      {
+        "id": "2",
+        "title": "Qual a importancia da comunidade na vida de um dev",
+        "date": "01/10/2021",
+        "author": "DIO",
+        "source": "DIO",
+        "uri":
+          "https://ia600204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act2_shakespeare.mp3",
+        "imageSource": "https://i.ibb.co/FYjqrST/cover.png"
+      },{
+        "id": "3",
+        "title": "Carreira de sucesso",
+        "date": "01/10/2021",
+        "author": "DIO",
+        "source": "DIO",
+        "uri":
+          "https://ia800204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act1_shakespeare.mp3",
+        "imageSource": "https://i.ibb.co/FYjqrST/cover.png"
+      },
+      {
+        "id": "4",
+        "title": "Qual a importancia da comunidade na vida de um dev",
+        "date": "01/10/2021",
+        "author": "DIO",
+        "source": "DIO",
+        "uri":
+          "https://ia600204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act2_shakespeare.mp3",
+        "imageSource": "https://i.ibb.co/FYjqrST/cover.png"
+      },{
+        "id": "5",
+        "title": "Carreira de sucesso",
+        "date": "01/10/2021",
+        "author": "William Shakespeare",
+        "source": "Librivox",
+        "uri":
+          "https://ia800204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act1_shakespeare.mp3",
+        "imageSource": "https://i.ibb.co/FYjqrST/cover.png"
+      },
+      {
+        "id": "6",
+        "title": "Qual a importancia da comunidade na vida de um dev",
+        "date": "01/10/2021",
+        "author": "DIO",
+        "source": "DIO",
+        "uri":
+          "https://ia600204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act2_shakespeare.mp3",
+        "imageSource": "https://i.ibb.co/FYjqrST/cover.png"
+      }
+    ]
+}
