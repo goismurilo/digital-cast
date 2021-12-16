@@ -18,7 +18,7 @@ const AudioProvider: React.FC = ({ children }) => {
         setCurrentAudioInfo(source);
 
         const { sound } = await Audio.Sound.createAsync({
-            uri: source.uri,
+            uri: source.preview,
         });
 
         setCurrentAudio(sound);

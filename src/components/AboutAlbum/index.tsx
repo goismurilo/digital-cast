@@ -12,8 +12,8 @@ const AboutAlbum: React.FC = () => {
             <Album
                 source={{
                     uri:
-                        currentAudioInfo?.imageSource ||
-                        "https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg",
+                        currentAudioInfo?.picture ||
+                        "https://lineup-images.scdn.co/wrapped-2021-top100_DEFAULT-pt.jpg",
                 }}
             />
         </Container>

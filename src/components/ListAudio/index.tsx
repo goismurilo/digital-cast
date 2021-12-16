@@ -20,12 +20,12 @@ const ListAudio: React.FC = () => {
                 <ItemContainer>
                     <ImgAlbm
                         source={{
-                            uri: item.imageSource,
+                            uri: item.picture,
                         }}
                     />
                     <ItemInfoContainer>
                         <ItemInfoTitle>{item.title}</ItemInfoTitle>
-                        <ItemInfoData>{item.date}</ItemInfoData>
+                        <ItemInfoData>{item.artist}</ItemInfoData>
                     </ItemInfoContainer>
                 </ItemContainer>
             </TouchableOpacity>
