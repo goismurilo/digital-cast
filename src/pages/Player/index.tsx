@@ -21,7 +21,7 @@ const Player: React.FC = () => {
         <SafeAreaView>
             <Header handleToggleList={handleToggleList} />
             <ScrollView>
-                <Text>Audio: {audio}</Text>
+                <Text>{audio}</Text>
                 <AboutAlbum />
                 <AudioPlayer />
             </ScrollView>
@@ -29,7 +29,6 @@ const Player: React.FC = () => {
                 ref={actionSheetRef}
                 containerStyle={{
                     height: Dimensions.get('screen').height - 150,
-                    padding: 20
                 }}
             >
                 <ListAudio />

@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const ItemContainer = styled.View`
     flex-direction: row;
-    margin: 20px 0;
+    padding: 20px 20px;
 `
 
 export const ItemInfoContainer = styled.View`

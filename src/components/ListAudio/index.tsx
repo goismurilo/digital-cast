@@ -1,44 +1,47 @@
-import React from 'react';
-import { FlatList, ScrollView } from 'react-native';
+import React from "react";
+import { ScrollView, FlatList, TouchableOpacity } from "react-native";
+import { useAudio } from "../../hooks/audio";
 
 import {
-    ImgAlbm,
     ItemContainer,
     ItemInfoContainer,
-    ItemInfoData,
     ItemInfoTitle,
-    Separator
-} from './styles';
+    ItemInfoData,
+    ImgAlbm,
+    Separator,
+} from "./styles";
 
 const ListAudio: React.FC = () => {
-    const data = [
-        {
-            id: "1",
-            title: "title",
-        }
-    ];
+    const { playlist, PlaySong } = useAudio();
 
     const RenderItem = ({ item }) => {
         return (
-            <ItemContainer>
-                <ImgAlbm source={{ uri: "https://complianz.io/wp-content/uploads/2019/03/placeholder.jpg" }} />
-                <ItemInfoContainer>
-                    <ItemInfoTitle>Nome</ItemInfoTitle>
-                    <ItemInfoData>01/02/2022</ItemInfoData>
-                </ItemInfoContainer>
-            </ItemContainer>
-        )
-    }
+            <TouchableOpacity onPress={() => PlaySong(item, true)}>
+                <ItemContainer>
+                    <ImgAlbm
+                        source={{
+                            uri: item.imageSource,
+                        }}
+                    />
+                    <ItemInfoContainer>
+                        <ItemInfoTitle>{item.title}</ItemInfoTitle>
+                        <ItemInfoData>{item.date}</ItemInfoData>
+                    </ItemInfoContainer>
+                </ItemContainer>
+            </TouchableOpacity>
+        );
+    };
+
     return (
         <ScrollView>
             <FlatList
-                data={data}
-                keyExtractor={item => item.id}
+                data={playlist}
+                keyExtractor={(item) => item.id}
                 ItemSeparatorComponent={() => <Separator />}
-                renderItem={item => <RenderItem {...item} />}
+                renderItem={(item) => <RenderItem {...item} />}
             />
         </ScrollView>
     );
-}
+};
 
 export default ListAudio;
