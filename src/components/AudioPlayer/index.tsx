@@ -1,5 +1,5 @@
 import React from "react";
-import { Feather } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 
 import { Container, ButtonContainer, ButtonAction } from "./styles";
 import { useAudio } from "../../hooks/audio";
@@ -11,13 +11,13 @@ const AudioPlayer: React.FC = () => {
         <Container>
             <ButtonContainer>
                 <ButtonAction>
-                    <Feather name="chevron-left" size={24} color="white" />
+                    <Entypo name="controller-jump-to-start" size={30} color="#272736" />
                 </ButtonAction>
                 <ButtonAction primary onPress={handleToggleAudio}>
-                    <Feather name={isPlay ? "pause" : "play"} size={32} color="white" />
+                    <Entypo name={isPlay ? "controller-paus" : "controller-play"} size={46} color="#272736" />
                 </ButtonAction>
                 <ButtonAction>
-                    <Feather name="chevron-right" size={24} color="white" />
+                    <Entypo name="controller-next" size={30} color="#272736" />
                 </ButtonAction>
             </ButtonContainer>
         </Container>
