@@ -12,7 +12,7 @@ export const Container = styled.View`
 
 export const ButtonContainer = styled.View`
     flex-direction: row;
-    width: ${width};
+    width: ${width}px;
     justify-content: space-between;
     align-items: center; 
 `
@@ -20,7 +20,7 @@ export const ButtonContainer = styled.View`
 export const ButtonAction = styled.TouchableOpacity`
     width: ${props => props.primary ? 85 : 66}px;
     height: ${props => props.primary ? 85 : 66}px;
-    background: ${props => props.primary ? '#F43F30' : '#FE9541'};
+    background: ${props => props.primary ? '#ff6b97' : '#272736'};
     border-radius: ${props => props.primary ? 42 : 33}px;
 
     justify-content: center;

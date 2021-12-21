@@ -9,6 +9,9 @@ const AudioProvider: React.FC = ({ children }) => {
     const [currentAudioInfo, setCurrentAudioInfo] = useState();
     const [isPlay, setIsPlay] = useState(false);
 
+    const [prevAudio, setPrevAudio] = useState();
+    const [nextAudio, setNextAudio] = useState();
+
     const [playlist, setPlaylist] = useState([]);
 
     const PlaySong = async (source, autoPlay = false) => {
@@ -28,6 +31,9 @@ const AudioProvider: React.FC = ({ children }) => {
             await sound.playAsync();
         }
 
+        // console.log(playlist[2]);
+        console.log(playlist.findIndex(1));
+
         return;
     };
 
@@ -41,9 +47,9 @@ const AudioProvider: React.FC = ({ children }) => {
         setIsPlay((prev) => !prev);
     };
 
-    const handleNextAudio = () => {
-        //PlaySong()
-        return;
+    const handleNextAudio = async () => {
+
+        return console.log(playlist[currentAudioInfo.position]);
     };
 
     const handlePreviousAudio = () => {

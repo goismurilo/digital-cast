@@ -9,12 +9,15 @@ export const Container = styled.View`
     padding-top: 20px;
 `
 
-export const Title = styled.Text`
+export const InfoTrack = styled.Text`
     color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: ${props => props.title ? 24 : 20}px;
+    font-weight: ${props => props.title ? 700 : 400};
+    width: ${width}px;
+
+    text-align: left;
+    margin-bottom: ${props => props.title ? 0 : 20}px;
+    margin-top: ${props => props.title ? 20 : 0}px;
 `
 
 export const Album = styled.Image`
