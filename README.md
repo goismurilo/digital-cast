@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" style="background-color: #272736">
     <img style="width: 350px; padding: 30px  0px" src="./assets/icons-logo.png" />
 </div>
 
