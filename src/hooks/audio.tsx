@@ -32,7 +32,6 @@ const AudioProvider: React.FC = ({ children }) => {
         }
 
         // console.log(playlist[2]);
-        console.log(playlist.findIndex(1));
 
         return;
     };
@@ -49,7 +48,7 @@ const AudioProvider: React.FC = ({ children }) => {
 
     const handleNextAudio = async () => {
 
-        return console.log(playlist[currentAudioInfo.position]);
+        return;
     };
 
     const handlePreviousAudio = () => {
