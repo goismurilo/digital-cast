@@ -1,9 +1,5 @@
 <div align="center">
-
-![image](./assets/icons-logo.png)
-
-
-
+    <img style="width: 350px; padding: 30px  0px" src="./assets/icons-logo.png" />
 </div>
 
 ## 📦 O que é o projeto?
