@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" style="background-color: #272736">
     <img style="width: 350px; padding: 30px  0px" src="./assets/icons-logo.png" />
 </div>
 
@@ -36,6 +36,7 @@ Esse comando vai iniciar o projeto no seu navegador no modo de desenvolvedor. Ab
 ### `yarn api:server`
 
 Esse comando vai iniciar o servidor fake. O projeto vai consumir os dados presentes no arquivo **db.json** que está na raiz do projeto.
+Aqui também será necessário modificar o IP que está fixo para a faixa que está no sua rede.
 
 ## 🤝🏾 Como contribuir
 
